@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>How to Pass in School Comp Sci edition</title>
+    <title>How to Pass in School</title>
     <style>
         body {
             font-family: 'Courier New', monospace;
@@ -18,11 +18,14 @@
             max-width: 800px;
             margin: auto;
         }
+        #extraTips {
+            display: none;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>How to Pass in School Comp Sci edition</h1>
+        <h1>How to Pass in School</h1>
         
         <h2>1. Time Management</h2>
         <p>Allocating your time wisely is crucial for academic success.</p>
@@ -38,6 +41,27 @@
 
         <h2>5. Self-care</h2>
         <p>Physical well-being is equally important; exercise, sleep, and proper nutrition can boost your academic performance.</p>
+
+        <button onclick="showExtraTips()">Show Extra Tips</button>
+
+        <div id="extraTips">
+            <h2>6. Use Technology</h2>
+            <p>Utilize educational apps and websites for a more engaging learning experience.</p>
+
+            <h2>7. Review Material</h2>
+            <p>Regularly review previously learned material to ensure long-term retention.</p>
+        </div>
     </div>
+
+    <script>
+        function showExtraTips() {
+            var x = document.getElementById("extraTips");
+            if (x.style.display === "none") {
+                x.style.display = "block";
+            } else {
+                x.style.display = "none";
+            }
+        }
+    </script>
 </body>
 </html>
