@@ -1,73 +1,57 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-  <meta http-equiv="Content-Style-Type" content="text/css">
-  <title></title>
-  <meta name="Generator" content="Cocoa HTML Writer">
-  <meta name="CocoaVersion" content="2487">
-  <style type="text/css">
-    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
-    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Test</title>
 </head>
 <body>
-<p class="p1">&lt;!DOCTYPE html&gt;</p>
-<p class="p1">&lt;html lang="en"&gt;</p>
-<p class="p1">&lt;head&gt;</p>
-<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
-<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</p>
-<p class="p1">&lt;title&gt;JavaScript Test&lt;/title&gt;</p>
-<p class="p1">&lt;/head&gt;</p>
-<p class="p1">&lt;body&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">TEST</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;script&gt;</p>
-<p class="p1">// Ensure this script runs after the DOM is fully loaded</p>
-<p class="p1">document.addEventListener('DOMContentLoaded', function() {</p>
-<p class="p1"><span class="Apple-converted-space">  </span>var script = document.createElement('script');</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Set standard attributes using direct properties</p>
-<p class="p1"><span class="Apple-converted-space">  </span>script.draggable = true;</p>
-<p class="p1"><span class="Apple-converted-space">  </span>console.log('script draggable:', script.draggable); // should return true</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Set non-standard attributes using setAttribute</p>
-<p class="p1"><span class="Apple-converted-space">  </span>script.setAttribute('blocking', 'none');</p>
-<p class="p1"><span class="Apple-converted-space">  </span>console.log('script blocking:', script.getAttribute('blocking')); // should return 'none'</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Set data-* attributes using dataset</p>
-<p class="p1"><span class="Apple-converted-space">  </span>script.dataset.message = 'test';</p>
-<p class="p1"><span class="Apple-converted-space">  </span>console.log('script message:', script.dataset.message); // should return 'test'</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Append the script element to the document so it exists in the DOM for this example</p>
-<p class="p1"><span class="Apple-converted-space">  </span>document.body.appendChild(script);</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Example of how to customize and iterate over all attributes of the script element</p>
-<p class="p1"><span class="Apple-converted-space">  </span>for (let attr of script.attributes) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>console.log(attr.name + ': ' + attr.value);</p>
-<p class="p1"><span class="Apple-converted-space">  </span>}</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Example extra information</p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Customize your script by adding more data-* attributes or setting more properties</p>
-<p class="p1"><span class="Apple-converted-space">  </span>script.dataset.author = 'Dr. Ebiwari';</p>
-<p class="p1"><span class="Apple-converted-space">  </span>script.async = true;</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Append the customized script to your GitHub page HTML to showcase your work</p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Note: Actual GitHub Pages are static and do not run server-side scripts</p>
-<p class="p2"><br></p>
-<p class="p1"><span class="Apple-converted-space">  </span>// Edit the visuals of a cookie banner (assuming you have a cookie banner element)</p>
-<p class="p1"><span class="Apple-converted-space">  </span>var cookieBanner = document.getElementById('cookiebanner');</p>
-<p class="p1"><span class="Apple-converted-space">  </span>if (cookieBanner) {</p>
-<p class="p1"><span class="Apple-converted-space">    </span>cookieBanner.style.backgroundColor = '#353839'; // dark background</p>
-<p class="p1"><span class="Apple-converted-space">    </span>cookieBanner.style.color = '#ffffff'; // white text</p>
-<p class="p1"><span class="Apple-converted-space">    </span>// Add more styling as per your requirement</p>
-<p class="p1"><span class="Apple-converted-space">  </span>} // This closes the if statement</p>
-<p class="p2"><br></p>
-<p class="p1">}); // This closes the event listener callback function</p>
-<p class="p1">&lt;/script&gt;</p>
-<p class="p2"><br></p>
-<p class="p1">&lt;/body&gt;</p>
-<p class="p1">&lt;/html&gt;</p>
+
+TEST
+
+<script>
+// Ensure this script runs after the DOM is fully loaded
+document.addEventListener('DOMContentLoaded', function() {
+  var script = document.createElement('script');
+
+  // Set standard attributes using direct properties
+  script.draggable = true;
+  console.log('script draggable:', script.draggable); // should return true
+
+  // Set non-standard attributes using setAttribute
+  script.setAttribute('blocking', 'none');
+  console.log('script blocking:', script.getAttribute('blocking')); // should return 'none'
+
+  // Set data-* attributes using dataset
+  script.dataset.message = 'test';
+  console.log('script message:', script.dataset.message); // should return 'test'
+
+  // Append the script element to the document so it exists in the DOM for this example
+  document.body.appendChild(script);
+
+  // Example of how to customize and iterate over all attributes of the script element
+  for (let attr of script.attributes) {
+    console.log(attr.name + ': ' + attr.value);
+  }
+
+  // Example extra information
+  // Customize your script by adding more data-* attributes or setting more properties
+  script.dataset.author = 'Dr. Ebiwari';
+  script.async = true;
+
+  // Append the customized script to your GitHub page HTML to showcase your work
+  // Note: Actual GitHub Pages are static and do not run server-side scripts
+
+  // Edit the visuals of a cookie banner (assuming you have a cookie banner element)
+  var cookieBanner = document.getElementById('cookiebanner');
+  if (cookieBanner) {
+    cookieBanner.style.backgroundColor = '#353839'; // dark background
+    cookieBanner.style.color = '#ffffff'; // white text
+    // Add more styling as per your requirement
+  } // This closes the if statement
+
+}); // This closes the event listener callback function
+</script>
+
 </body>
 </html>
